@@ -1,0 +1,119 @@
+/*********************************** Cabeçalho - Mobile **************************************/
+
+/* Div criada apenas para funcionamento do script de responsividade do menu */
+.topo {
+    display: flex;
+    align-items: center;
+    height: 105px;
+}
+
+/* Container da div topo */
+.topo .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo do Header */
+.menuPrincipal-logo {
+    width: 180px;
+}
+
+/* Botão hamburguer do Menu mobile */
+.btn-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 28px;
+}
+
+/* Nav do menu principal */
+.menuPrincipal {
+    display: none;
+}
+
+/* Icones presentes nos links mobile */
+.whatsapp-icon {
+    width: 16px;
+    margin-right: 10px;
+    fill: #7B2880 !important;
+}
+  
+/* Links do menu */
+.menuPrincipal-link {
+    display: block;
+    padding: 11px 0;
+    white-space: nowrap;
+    color: #eee;
+}
+
+
+/*********************************** Cabeçalho - Desktop **************************************/
+
+@media (min-width: 768px) {
+
+    /* Nav do menu principal */
+    .menuPrincipal {
+        display: block;
+        background: none;
+    }
+
+    /* Links do menu */
+    .menuPrincipal-link {
+        border: none;
+    }
+
+    /* ul do Menu */
+    ul.menuPrincipal-list {
+        display: flex;
+    }
+
+    /* Li's do Menu */
+    li.menuPrincipal-list-item {
+        padding: 0 15px;
+    }
+
+    @media (min-width: 1024px) {
+
+        /* Li's do Menu */
+        li.menuPrincipal-list-item {
+            padding: 0 17px;
+        }
+
+        /* Logo do Header */
+        .menuPrincipal-logo {
+            width: 190px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        /* Li's do Menu */
+        li.menuPrincipal-list-item {
+            padding: 0 20px;
+        }
+    }
+
+    /* Botão da Área do Aluno */
+    .btn-chamadaAcao {
+        display: flex;
+        align-items: center;
+        font-size: .9rem;
+        color: #eee;
+        border-radius: 7px;
+        padding: 10px;
+        background: #7B2880;
+        transition: background .7s;
+    }
+
+    /* Hover do Botão de Área do Aluno */
+    .btn-chamadaAcao:hover {
+        background: #eee;
+        color: #7B2880;
+        transition: background .7s;
+    }
+
+    .btn-chamadaAcao:hover .whatsapp-icon{
+        fill: #7B2880 !important;
+    }
+}
