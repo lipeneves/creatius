@@ -1,0 +1,33 @@
+#showcase{
+    color: #E3E3E3;
+}
+
+#showcase .container{
+    display: flex;
+    padding: 3rem 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#showcase h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+#showcase .chamadaPrincipal{
+    width: 40%;
+}
+
+#showcase .subtitle{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+#showcase .btn-chamadaAcao{
+    display: inline-flex;
+    margin-top: 2.25rem;
+    font-size: 1.1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}

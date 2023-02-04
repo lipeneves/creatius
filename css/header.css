@@ -22,7 +22,6 @@
 /* Botão hamburguer do Menu mobile */
 .btn-menu {
     background: none;
-    border: none;
     cursor: pointer;
     width: 28px;
 }
@@ -42,10 +41,11 @@
 /* Links do menu */
 .menuPrincipal-link {
     display: block;
-    padding: 11px 0;
+    padding: 10px 0;
     white-space: nowrap;
     color: #eee;
 }
+
 
 
 /*********************************** Cabeçalho - Desktop **************************************/
@@ -54,13 +54,17 @@
 
     /* Nav do menu principal */
     .menuPrincipal {
-        display: block;
+        display: flex;
         background: none;
     }
 
     /* Links do menu */
     .menuPrincipal-link {
-        border: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .menuPrincipal-link:hover, .atual {
+        border-color: #7B2880;
     }
 
     /* ul do Menu */
@@ -68,10 +72,7 @@
         display: flex;
     }
 
-    /* Li's do Menu */
-    li.menuPrincipal-list-item {
-        padding: 0 15px;
-    }
+  
 
     @media (min-width: 1024px) {
 
@@ -86,21 +87,13 @@
         }
     }
 
-    @media (min-width: 1200px) {
-
-        /* Li's do Menu */
-        li.menuPrincipal-list-item {
-            padding: 0 20px;
-        }
-    }
-
     /* Botão da Área do Aluno */
     .btn-chamadaAcao {
         display: flex;
         align-items: center;
         font-size: .9rem;
         color: #eee;
-        border-radius: 7px;
+        border-radius: 8px;
         padding: 10px;
         background: #7B2880;
         transition: background .7s;
@@ -116,4 +109,8 @@
     .btn-chamadaAcao:hover .whatsapp-icon{
         fill: #7B2880 !important;
     }
+}
+
+li.btn {
+    padding-right: 0;
 }

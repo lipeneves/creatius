@@ -27,6 +27,8 @@
     <!-- Meus estilos -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/servicos.css">
 
     <!-- Minhas fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,65 +41,130 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="topo">
+    <div class="intro">
+
+        <header class="cabecalho">
+            <div class="topo">
+
+                <div class="container">
+
+                    <a href="#">
+                        <img src="img/logo.svg" alt="Creatius" class="menuPrincipal-logo">
+                    </a>
+
+                    <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
+
+                    <nav class="menuPrincipal">
+                        <ul class="menuPrincipal-list">
+                            <li class="menuPrincipal-list-item">
+                                <a class="menuPrincipal-link atual" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menuPrincipal-list-item">
+                                <a class="menuPrincipal-link" href="#">
+                                    Soluções
+                                </a>
+                            </li>
+                            <li class="menuPrincipal-list-item">
+                                <a class="menuPrincipal-link" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="menuPrincipal-list-item">
+                                <a class="menuPrincipal-link" href="#">
+                                    Contato
+                                </a>
+                            </li>
+                            <li class="menuPrincipal-list-item btn">
+                                <a class=" btn-chamadaAcao" href="#">
+                                    <svg class="whatsapp-icon" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M30 14.6137C30 22.6847 23.407 29.2273 15.2727 29.2273C12.6903 29.2273 10.2643 28.5673 8.15367 27.409L0 30L2.65833 22.1593C1.31733 19.9573 0.545 17.3747 0.545 14.6137C0.545 6.54267 7.13867 0 15.2727 0C23.4077 0 30 6.54267 30 14.6137ZM15.2727 2.32733C8.44467 2.32733 2.89067 7.839 2.89067 14.6137C2.89067 17.302 3.767 19.7917 5.24933 21.817L3.70233 26.38L8.46067 24.8677C10.4157 26.1513 12.7577 26.9 15.273 26.9C22.1 26.9 27.655 21.389 27.655 14.6143C27.655 7.83967 22.1003 2.32733 15.2727 2.32733ZM22.7097 17.9793C22.6187 17.8303 22.3783 17.7403 22.0177 17.5613C21.6563 17.3823 19.881 16.5153 19.551 16.3963C19.22 16.277 18.9787 16.217 18.7383 16.5753C18.498 16.934 17.806 17.7403 17.595 17.9793C17.3843 18.219 17.174 18.249 16.8127 18.0697C16.452 17.8907 15.289 17.512 13.91 16.292C12.837 15.3427 12.1123 14.1707 11.9017 13.8117C11.6913 13.4533 11.8797 13.2597 12.06 13.0813C12.2227 12.9207 12.4213 12.663 12.6017 12.454C12.7827 12.2447 12.8427 12.0957 12.9623 11.8563C13.0833 11.6173 13.023 11.4083 12.9323 11.2287C12.8423 11.0497 12.1197 9.287 11.819 8.56967C11.5183 7.853 11.218 7.97233 11.007 7.97233C10.7967 7.97233 10.5557 7.94233 10.315 7.94233C10.0743 7.94233 9.683 8.032 9.352 8.39033C9.02133 8.749 8.089 9.61567 8.089 11.378C8.089 13.1407 9.382 14.8437 9.563 15.0823C9.74333 15.321 12.0597 19.0557 15.7297 20.49C19.4 21.9237 19.4 21.4453 20.062 21.3853C20.7233 21.3257 22.1973 20.519 22.4993 19.683C22.7993 18.8457 22.7993 18.1287 22.7097 17.9793Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                    <span>(47) 99141-9513</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section id="showcase">
 
             <div class="container">
+                <div class="chamadaPrincipal">
+                    <h1>MARKETING
+                        & DESIGN</h1>
 
-                <a href="#">
-                    <img src="img/logo.svg" alt="Creatius" class="menuPrincipal-logo">
-                </a>
+                    <p class="subtitle">Soluções completas para conquistar
+                        seus clientes e aumentar suas vendas.</p>
 
-                <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
+                    <a class=" btn-chamadaAcao" href="#">
 
-                <nav class="menuPrincipal">
-                    <ul class="menuPrincipal-list">
-                        <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="#">
-                                <span class="atual">Home</span>
-                            </a>
-                        </li>
-                        <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="#">
-                                Serviços
-                            </a>
-                        </li>
-                        <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="#">
-                                Cliente
-                            </a>
-                        </li>
-                        <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="#">
-                                Contato
-                            </a>
-                        </li>
-                        <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link btn-chamadaAcao" href="#">
-                                <svg class="whatsapp-icon" viewBox="0 0 30 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M30 14.6137C30 22.6847 23.407 29.2273 15.2727 29.2273C12.6903 29.2273 10.2643 28.5673 8.15367 27.409L0 30L2.65833 22.1593C1.31733 19.9573 0.545 17.3747 0.545 14.6137C0.545 6.54267 7.13867 0 15.2727 0C23.4077 0 30 6.54267 30 14.6137ZM15.2727 2.32733C8.44467 2.32733 2.89067 7.839 2.89067 14.6137C2.89067 17.302 3.767 19.7917 5.24933 21.817L3.70233 26.38L8.46067 24.8677C10.4157 26.1513 12.7577 26.9 15.273 26.9C22.1 26.9 27.655 21.389 27.655 14.6143C27.655 7.83967 22.1003 2.32733 15.2727 2.32733ZM22.7097 17.9793C22.6187 17.8303 22.3783 17.7403 22.0177 17.5613C21.6563 17.3823 19.881 16.5153 19.551 16.3963C19.22 16.277 18.9787 16.217 18.7383 16.5753C18.498 16.934 17.806 17.7403 17.595 17.9793C17.3843 18.219 17.174 18.249 16.8127 18.0697C16.452 17.8907 15.289 17.512 13.91 16.292C12.837 15.3427 12.1123 14.1707 11.9017 13.8117C11.6913 13.4533 11.8797 13.2597 12.06 13.0813C12.2227 12.9207 12.4213 12.663 12.6017 12.454C12.7827 12.2447 12.8427 12.0957 12.9623 11.8563C13.0833 11.6173 13.023 11.4083 12.9323 11.2287C12.8423 11.0497 12.1197 9.287 11.819 8.56967C11.5183 7.853 11.218 7.97233 11.007 7.97233C10.7967 7.97233 10.5557 7.94233 10.315 7.94233C10.0743 7.94233 9.683 8.032 9.352 8.39033C9.02133 8.749 8.089 9.61567 8.089 11.378C8.089 13.1407 9.382 14.8437 9.563 15.0823C9.74333 15.321 12.0597 19.0557 15.7297 20.49C19.4 21.9237 19.4 21.4453 20.062 21.3853C20.7233 21.3257 22.1973 20.519 22.4993 19.683C22.7993 18.8457 22.7993 18.1287 22.7097 17.9793Z"
-                                        fill="currentColor" />
-                                </svg>
 
-                                <span>(47) 99141-9513</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                        Fale Conosco
+                    </a>
+                </div>
 
+                <img src="./img/amico.png" alt="Marketing para sua empresa" width="500">
+
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=HahHVLjCyco"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
             </div>
 
+        </section>
 
+        <section id="servicos">
+            <div class="container">
+                <span class="linha"></span>
 
-        </div>
-    </header>
+                <h2>Conheça nossos serviços</h2>
+
+                <div class="containerCards">
+                    <div class="card">
+                        <h3>Gestão de Redes Sociais</h3>
+                        <img src="img/icone3.svg" alt="Icone Marketing Estratégico e SEO" class="icone">
+                        <span class="linha"></span>
+                        <P>Análise completa,
+                            benchmarketing e plano
+                            estrutural</P>
+                    </div>
+
+                    <div class="card">
+                        <h3>Designer e Criação Publicitária</h3>
+                        <img src="img/icone2.svg" alt="Icone Marketing Estratégico e SEO" class="icone">
+                        <span class="linha"></span>
+                        <P>Criação de identidades
+                            visuais e suas demandas</P>
+                    </div>
+
+                    <div class="card">
+                        <h3>Criação de Sites e Aplicativos</h3>
+                        <img src="img/icone4.svg" alt="Icone Marketing Estratégico e SEO" class="icone">
+                        <span class="linha"></span>
+                        <P>Desenvolvimento de
+                            websites e aplicativos</P>
+                    </div>
+
+                    <div class="card">
+                        <h3>Marketing Estratégico e SEO</h3>
+                        <img src="img/icone1.svg" alt="Icone Marketing Estratégico e SEO" class="icone">
+                        <span class="linha"></span>
+                        <P>Estratégia focada em
+                            marketing e SEO</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 
 </html>
-
-
-<!DOCTYPE html>
-
-<html lang="pt-br">

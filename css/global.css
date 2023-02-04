@@ -1,8 +1,13 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: #040404;
     font-family: 'Lato', sans-serif;
-
+    box-sizing: border-box !important;
 }
 
 a {
@@ -18,3 +23,15 @@ li {
     margin: 0 auto;
     max-width: 1200px;
 }
+
+.btn-chamadaAcao:hover{
+    border: none;
+}
+
+.intro{
+    background: url("../img/background-header.jpg") no-repeat;
+    background-size: cover;
+    min-height: 65vh;
+}
+
+
