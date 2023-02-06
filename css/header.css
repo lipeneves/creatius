@@ -1,116 +1,150 @@
-/*********************************** Cabeçalho - Mobile **************************************/
+/*********************************** Cabeçalho - Desktop **************************************/
 
 /* Div criada apenas para funcionamento do script de responsividade do menu */
-.topo {
-    display: flex;
-    align-items: center;
-    height: 105px;
-}
 
-/* Container da div topo */
-.topo .container {
+/* Icones presentes nos links mobile */
+#cabecalho .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 28px 0;
 }
 
-/* Logo do Header */
-.menuPrincipal-logo {
-    width: 180px;
-}
-
-/* Botão hamburguer do Menu mobile */
-.btn-menu {
-    background: none;
-    cursor: pointer;
-    width: 28px;
-}
-
-/* Nav do menu principal */
-.menuPrincipal {
-    display: none;
-}
-
-/* Icones presentes nos links mobile */
 .whatsapp-icon {
     width: 16px;
     margin-right: 10px;
     fill: #7B2880 !important;
 }
-  
+
 /* Links do menu */
 .menuPrincipal-link {
     display: block;
     padding: 10px 0;
     white-space: nowrap;
     color: #eee;
+    border-bottom: 2px solid transparent;
+}
+
+/* Nav do menu principal */
+.menuPrincipal {
+    display: flex;
+    background: none;
 }
 
 
+.menuPrincipal-link:hover,
+.atual {
+    border-color: #7B2880;
+}
 
-/*********************************** Cabeçalho - Desktop **************************************/
+/* ul do Menu */
+ul.menuPrincipal-list {
+    display: flex;
+}
 
-@media (min-width: 768px) {
+/* Li's do Menu */
+li.menuPrincipal-list-item {
+    padding: 0 17px;
+}
 
-    /* Nav do menu principal */
-    .menuPrincipal {
-        display: flex;
-        background: none;
-    }
+/* Logo do Header */
+.menuPrincipal-logo {
+    width: 190px;
+}
 
-    /* Links do menu */
-    .menuPrincipal-link {
-        border-bottom: 2px solid transparent;
-    }
+/* Botão da Área do Aluno */
+.btn-chamadaAcao {
+    display: inline-flex;
+    align-items: center;
+    font-size: .9rem;
+    color: #eee;
+    border-radius: 8px;
+    padding: 10px;
+    background: #7B2880;
+    transition: background .7s;
+}
 
-    .menuPrincipal-link:hover, .atual {
-        border-color: #7B2880;
-    }
+/* Hover do Botão de Área do Aluno */
+.btn-chamadaAcao:hover {
+    background: #eee;
+    color: #7B2880;
+    transition: background .7s;
+}
 
-    /* ul do Menu */
-    ul.menuPrincipal-list {
-        display: flex;
-    }
-
-  
-
-    @media (min-width: 1024px) {
-
-        /* Li's do Menu */
-        li.menuPrincipal-list-item {
-            padding: 0 17px;
-        }
-
-        /* Logo do Header */
-        .menuPrincipal-logo {
-            width: 190px;
-        }
-    }
-
-    /* Botão da Área do Aluno */
-    .btn-chamadaAcao {
-        display: flex;
-        align-items: center;
-        font-size: .9rem;
-        color: #eee;
-        border-radius: 8px;
-        padding: 10px;
-        background: #7B2880;
-        transition: background .7s;
-    }
-
-    /* Hover do Botão de Área do Aluno */
-    .btn-chamadaAcao:hover {
-        background: #eee;
-        color: #7B2880;
-        transition: background .7s;
-    }
-
-    .btn-chamadaAcao:hover .whatsapp-icon{
-        fill: #7B2880 !important;
-    }
+.btn-chamadaAcao:hover .whatsapp-icon {
+    fill: #7B2880 !important;
 }
 
 li.btn {
     padding-right: 0;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 2rem !important;
+}
+
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menuPrincipal-logo {
+        width: 150px;
+    }
+
+    .menuPrincipal .menuPrincipal-list {
+        display: block;
+        text-align: left;
+        padding-left: 30px;
+        margin: 10px 0;
+        line-height: 30px;
+
+    }
+
+    .menuPrincipal-link:hover,
+    .atual {
+        border-color: transparent;
+    }
+
+
+    .menuPrincipal {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #090804;
+        top: 100px;
+        left: -120%;
+        text-align: center;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-chamadaAcao {
+        background: #7C2C80;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: 0 !important;
+        transition: background 0.2s;
+        margin-top: 10px;
+    }
+
+    #check:checked~.menuPrincipal {
+        left: 0;
+    }
 }
