@@ -3,7 +3,7 @@
 /* Div criada apenas para funcionamento do script de responsividade do menu */
 
 /* Icones presentes nos links mobile */
-#cabecalho .container{
+#cabecalho .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,4 +147,10 @@ li.btn {
     #check:checked~.menuPrincipal {
         left: 0;
     }
+
+    #cabecalho .container {
+        padding: 4px 0;
+    }
+
+    
 }
