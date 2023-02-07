@@ -1,6 +1,9 @@
 #showcase{
     color: #E3E3E3;
+    padding: 0;
+
 }
+
 
 #showcase .container{
     display: flex;
@@ -18,14 +21,6 @@
 #showcase .subtitle{
     font-size: 1.5rem;
     font-weight: lighter;
-}
-
-#showcase .btn-chamadaAcao{
-    display: inline-flex;
-    margin-top: 2.25rem;
-    font-size: 1.1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
 }
 
 #showcase .img-header{
