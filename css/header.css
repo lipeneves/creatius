@@ -52,27 +52,9 @@ li.menuPrincipal-list-item {
     width: 190px;
 }
 
-/* Botão da Área do Aluno */
-.btn-chamadaAcao {
-    display: inline-flex;
-    align-items: center;
-    font-size: .9rem;
-    color: #eee;
-    border-radius: 8px;
-    padding: 10px;
-    background: #7B2880;
-    transition: background .7s;
-}
 
-/* Hover do Botão de Área do Aluno */
-.btn-chamadaAcao:hover {
-    background: #eee;
-    color: #7B2880;
-    transition: background .7s;
-}
-
-.btn-chamadaAcao:hover .whatsapp-icon {
-    fill: #7B2880 !important;
+header .btn-primary{
+    margin: 0;
 }
 
 li.btn {

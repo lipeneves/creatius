@@ -1,0 +1,17 @@
+#objetivos{
+    background: #F5F5F5;
+}
+
+#objetivos .linha {
+    border-color:#7C2C80;
+}
+
+#objetivos .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#objetivos strong{
+    font-weight: bold;
+}
