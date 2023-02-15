@@ -27,6 +27,10 @@
     width: 500px;
 }
 
+#showcase .chamadaPrincipal{
+    width: 500px;
+}
+
 @media (max-width: 858px) {
     #showcase .img-header{
         display: none;
