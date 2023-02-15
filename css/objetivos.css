@@ -54,3 +54,19 @@
 strong{
     color: #7b2880;
 }
+
+@media (max-width: 858px) {
+    #objetivos .img-chamada {
+        display: none;
+    }
+
+    #objetivos h2 {
+        margin-bottom: 0;
+    }
+
+    #objetivos .box-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
