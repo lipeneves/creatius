@@ -1,17 +1,52 @@
 #objetivos{
     background: #F5F5F5;
+    padding-top: 3rem;
+    
 }
+
+
 
 #objetivos .linha {
     border-color:#7C2C80;
 }
 
-#objetivos .container{
+#objetivos .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#objetivos strong{
-    font-weight: bold;
+#objetivos .containerCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+#objetivos .card {
+    text-align: center;
+    background: #F5F5F5;
+    padding: 1.25rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #7b2880;
+    cursor: pointer;
+}
+
+#objetivos .icone {
+    margin-bottom: 1rem;
+    width: 70px;
+}
+
+#objetivos .img-chamada {
+    width: 40%;
+}
+
+#objetivos .box {
+    display: flex;
+    align-items: center;
+    max-width: 850px;
 }
