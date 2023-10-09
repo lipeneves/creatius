@@ -35,6 +35,11 @@
 }
 
 @media (max-width: 858px) {
+    #showcase .container {
+        display: flex;
+        justify-content: center;
+    }
+
     #showcase .img-header {
         display: none;
     }
