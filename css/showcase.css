@@ -14,7 +14,7 @@
 }
 
 #showcase h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -50,11 +50,12 @@
     }
 
     #showcase h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
         text-align: center;
     }
 
     #showcase .subtitle {
+        font-size: 1rem;
         text-align: center;
     }
 
